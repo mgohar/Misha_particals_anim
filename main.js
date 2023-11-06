@@ -50,8 +50,8 @@ World.add(world, walls);
 
 const loadImage = (onSuccess, onError) => {
     const randomNum = Math.floor(Math.random() * 6) + 1;
-
-    let url = `./t${randomNum}.png`
+    
+    let url = `https://cdn.jsdelivr.net/gh/mgohar/Misha_particals_anim@0.0.1/t${randomNum}.png`
     const img = new Image();
     img.onload = () => {
       onSuccess(img.src);
